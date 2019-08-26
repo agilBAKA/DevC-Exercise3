@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mantan euy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="mantanku">
+        <h1>Mantan</h1>
+        <ul class="mantanQue">
+            <li class="list-mantan">
+
+                <figure class="avatar" id="foto">
+                    
+                </figure>
+                <div id="namaMantan"></div>
+                <div id="lamaPacaran"></div>
+                <div id="baper"></div>
+                <div id="places"></div>
+            </li>
+        </ul>
+    </main>
+
+    <script type="text/javascript">
+
+    var mantanQue = [
+        {
+            id      : 1,
+            nama    : "Pevita Pearce",
+            baper   : "Masih sayang",
+            lamaPacaran : "18 bulan",
+            tempatFav   : [
+                            "Cafe",
+                            "Mall",
+                            "Park",
+                            "Home"
+                        ],
+            fotoMantan  : "https://media.matamata.com/thumbs/2018/09/10/84732-pevita-pearce-instagramatbrampearce/745x489-img-84732-pevita-pearce-instagramatbrampearce.jpg"
+        },
+
+        {
+            id      : 2,
+            nama    : "chelsea islan",
+            baper   : "B aja",
+            lamaPacaran : "8 bulan",
+            tempatFav   : [
+                            "Park",
+                            "Home"
+                        ],
+            fotoMantan  : "https://cdn1-production-images-kly.akamaized.net/CxsJ7auwPzxRk4JeEfW---9kPp0=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1622201/original/063611500_1497329411-17933964_1834965203483469_747178701522731008_n.jpg"
+        },        
+
+        {
+            id      : 3,
+            nama    : "mikha tambayong",
+            baper   : "Mantan terindah",
+            lamaPacaran : "28 bulan",
+            tempatFav   : [
+                            "Cafe",
+                            "Mall",
+                            "Park",
+                            "Home"
+                        ],
+            fotoMantan  : "https://asset.kompas.com/crop/0x42:1000x708/750x500/data/photo/2018/02/06/3079063555.jpeg"
+        },
+        
+        {
+            id      : 4,
+            nama    : "Ariel tatum",
+            baper   : "Khilaf",
+            lamaPacaran : "2 bulan",
+            tempatFav   : [
+                            "Mall"
+                        ],
+            fotoMantan  : "https://cdn.akurat.co/images/uploads/images/akurat_20180223053558_b65Me6.jpg"
+        },
+
+        
+        {
+            id      : 5,
+            nama    : "Dian Sastro",
+            baper   : "Khilaf",
+            lamaPacaran : "1 bulan",
+            tempatFav   : [
+                            "Mall"
+                        ],
+            fotoMantan  : "https://media.suara.com/pictures/480x260/2019/04/22/30255-dian-sastrowardoyo-instagram-attherealdisastr.jpg"
+        },
+
+
+
+        ]
+
+        console.log(mantanQue.length)
+
+        var listMantan = "";
+        for(var i = 0; i < mantanQue.length; i++){
+            console.log('nama mantan ' + mantanQue[i].nama);
+            var listMantan = listMantan+ "<li><div class='avatar'><img src="+ mantanQue[i].fotoMantan +"></div><div>"+mantanQue[i].nama+ "</div> <div>"+mantanQue[i].lamaPacaran+ "</div> <div>"+mantanQue[i].baper+ "</div> <div>"+mantanQue[i].tempatFav+ "</div></li>"
+            
+        }
+
+        
+        document.querySelector(".mantanQue").innerHTML = listMantan;
+
+    </script>
+
+</body>
+</html>

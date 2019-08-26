@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mantan euy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="mantanku">
+        <h1>Mantan</h1>
+        <ul>
+            <li>
+
+                <div class="avatar" id="foto">
+                    
+                </div>
+                <div id="namaMantan"></div>
+                <div id="lamaPacaran"></div>
+                <div id="baper"></div>
+                <div id="places"></div>
+            </li>
+        </ul>
+    </main>
+
+    <script type="text/javascript">
+
+    var mantanQue =
+        {
+            id      : 1,
+            nama    : "Pevita",
+            baper   : "Masih sayang",
+            lamaPacaran : "18 bulan",
+            tempatFav   : [
+                            "Cafe",
+                            "Mall",
+                            "Park",
+                            "Home"
+                        ],
+            fotoMantan  : "https://media.matamata.com/thumbs/2018/09/10/84732-pevita-pearce-instagramatbrampearce/745x489-img-84732-pevita-pearce-instagramatbrampearce.jpg"
+        }
+
+        document.getElementById('namaMantan').textContent = mantanQue.nama;
+        document.getElementById('lamaPacaran').textContent = mantanQue.lamaPacaran;
+        document.getElementById('baper').textContent = mantanQue.baper;
+        document.getElementById('places').textContent = mantanQue.tempatFav;
+        document.getElementById('foto').innerHTML = "<img src="+ mantanQue.fotoMantan +">";
+
+
+    
+
+    </script>
+
+</body>
+</html>
